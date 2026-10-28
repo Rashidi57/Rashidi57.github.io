@@ -1,88 +1,228 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUHAMMAD RASHIDI BIN MAT LELA - Portfolio</title>
+    <title>Muhammad Rashidi bin Mat Lela - Digital CV & Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
         
-        /* Header Biru */
-        header { background-color: #0d3b66; color: white; text-align: center; padding: 40px 20px 20px 20px; }
+        /* HEADER SECTION */
+        header { background-color: #0d3b66; color: white; text-align: center; padding: 40px 20px 25px 20px; }
         .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #f4d35e; object-fit: cover; margin-bottom: 15px; }
-        header h1 { font-size: 2rem; letter-spacing: 1px; margin-bottom: 8px; }
-        header p { font-size: 0.95rem; opacity: 0.9; margin-bottom: 5px; }
+        header h1 { font-size: 2.2rem; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase; }
+        header p { font-size: 0.95rem; opacity: 0.9; margin-bottom: 6px; }
         header a { color: #f4d35e; text-decoration: none; font-weight: bold; }
+        header a:hover { text-decoration: underline; }
 
-        /* Navigation Bar */
-        nav { background-color: #082846; text-align: center; padding: 10px; sticky; top: 0; }
-        nav a { color: white; text-decoration: none; margin: 0 12px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
+        /* NAVIGATION BAR */
+        nav { background-color: #082846; text-align: center; padding: 12px; sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
         nav a:hover { color: #f4d35e; }
 
-        /* Container Kandungan */
-        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        /* MAIN CONTAINER */
+        .container { max-width: 950px; margin: 30px auto; padding: 0 20px; }
         .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        .card h2 { color: #0d3b66; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-bottom: 15px; font-size: 1.4rem; }
+        .card h2 { color: #0d3b66; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-bottom: 18px; font-size: 1.4rem; text-transform: uppercase; }
+        
+        /* DETAILS & LISTS */
+        .personal-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 15px; background: #eef4f8; padding: 15px; border-radius: 6px; }
+        .personal-info div { font-size: 0.95rem; }
+        .personal-info strong { color: #0d3b66; }
+
+        .timeline-item { margin-bottom: 20px; }
+        .timeline-item h3 { font-size: 1.1rem; color: #111; margin-bottom: 3px; }
+        .timeline-item .sub-title { font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 8px; }
         
         ul { margin-left: 20px; }
-        li { margin-bottom: 8px; }
+        li { margin-bottom: 6px; font-size: 0.95rem; }
+        
+        .badge { background-color: #f4d35e; color: #0d3b66; padding: 3px 8px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; }
+        
+        /* TWO COLUMN GRID FOR SKILLS & LANGUAGES */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
     </style>
 </head>
 <body>
 
     <!-- HEADER SECTION -->
     <header>
-        <!-- Ganti gambar-anda.jpg dengan nama fail gambar anda -->
-        <img src="https://via.placeholder.com/150" alt="Gambar Profil" class="profile-img">
-        <h1>MUHAMMAD RASHIDI BIN MAT LELA</h1>
-        <p>Universiti/Kolej Anda, Alamat Ringkas</p>
-        <p>+601X-XXXXXXX | email-anda@gmail.com | <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></p>
+        <!-- Replace 'gambar-profil.jpg' with your photo link or uploaded filename -->
+        <img src="https://via.placeholder.com/150" alt="Muhammad Rashidi bin Mat Lela" class="profile-img">
+        <h1>Muhammad Rashidi bin Mat Lela</h1>
+        <p>Bachelor of Muamalat Administration (Hons.) | Minor in Islamic Finance</p>
+        <p>Ajil, Terengganu, Malaysia | Age: 23</p>
+        <p>Phone: +6011-25667969 | Email: <a href="mailto:mohdrashidiedy57@gmail.com">mohdrashidiedy57@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhd-rashidi-04ab48105/" target="_blank">linkedin.com/in/muhd-rashidi-04ab48105</a></p>
     </header>
 
     <!-- NAVIGATION MENU -->
     <nav>
-        <a href="#objective">Objective</a>
+        <a href="#summary">Summary</a>
         <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#certification">Certification</a>
+        <a href="#skills">Skills & Languages</a>
+        <a href="#activities">Activities</a>
+        <a href="#reference">Reference</a>
     </nav>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTAINER -->
     <div class="container">
         
-        <!-- OBJECTIVE SECTION -->
-        <div class="card" id="objective">
-            <h2>Career Objective</h2>
-            <p>Saya seorang pelajar Sains Komputer / Teknologi Maklumat yang bermotivasi tinggi dengan kemahiran dalam pengaturcaraan dan pembangunan web. Memburu tempat latihan industri (*internship*) bermula [Tarikh Mula] hingga [Tarikh Tamat] untuk mengaplikasikan kemahiran teknikal serta menyumbang kepada projek syarikat.</p>
+        <!-- PERSONAL INFO & PROFESSIONAL SUMMARY -->
+        <div class="card" id="summary">
+            <h2>Professional Summary</h2>
+            <div class="personal-info">
+                <div><strong>Age:</strong> 23</div>
+                <div><strong>Residence:</strong> Ajil, Terengganu</div>
+                <div><strong>Current CGPA:</strong> <span class="badge">3.69 / 4.00</span></div>
+            </div>
+            <p>Final semester bachelor’s degree of Muamalat Administration (Hons.) student with a Minor in Islamic Finance at Islamic Business School (AACSB-Accredited), Universiti Utara Malaysia (CGPA: 3.69). Yayasan Daya Diri (YDD) Scholarship Recipient and three-time Dean’s List awardee. Seeking an internship opportunity in Islamic Financial Services, Financial Planning, Muamalat or any other related field starting from <strong>8 March 2027 to 8 July 2027</strong> to apply deep knowledge of Shariah-compliant financial systems and develop practical industry skills.</p>
         </div>
 
         <!-- EDUCATION SECTION -->
         <div class="card" id="education">
-            <h2>Education</h2>
-            <p><strong>Bachelor in Computer Science (Hons) / Diploma</strong></p>
-            <p>Universiti / Kolej Anda (2022 - Kini)</p>
-            <p>CGPA Semasa: 3.XX / 4.00</p>
+            <h2>Education Background</h2>
+            <div class="timeline-item">
+                <h3>Bachelor of Muamalat Administration with Hons. (Minor in Islamic Finance)</h3>
+                <div class="sub-title">Islamic Business School (AACSB-Accredited), Universiti Utara Malaysia (UUM)</div>
+                <ul>
+                    <li><strong>CGPA:</strong> 3.69 / 4.00</li>
+                    <li><strong>Honours/Awards:</strong> Yayasan Daya Diri (YDD) Scholarship Recipient | 3-Time Dean's List Awardee</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Sijil Tinggi Pelajaran Malaysia (STPM)</h3>
+                <ul>
+                    <li><strong>CGPA:</strong> 3.42</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- SKILLS SECTION -->
+        <!-- LEADERSHIP & EXPERIENCE -->
+        <div class="card" id="leadership">
+            <h2>Activities & Leadership Experience</h2>
+            
+            <div class="timeline-item">
+                <h3>SULAM Program Director | Pro-Muamalat: Halal Awareness & Cash Waqf Empowerment</h3>
+                <div class="sub-title">Current Position</div>
+                <ul>
+                    <li>Led the planning and executed a community outreach program engaging 50 students from Kolej Sultan Abdul Hamid, Alor Setar.</li>
+                    <li>Delivered an educational talk as a main speaker to enhance students’ knowledge.</li>
+                    <li>Coordinated programme logistics, educational module development, and overall event management.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Peer Tutor (Islamic Inheritance Law / Faraid)</h3>
+                <div class="sub-title">Current Position</div>
+                <ul>
+                    <li>Conducted peer tutoring classes on Faraid for Muamalat students.</li>
+                    <li>Developed structured learning materials and practice modules to support students’ learning.</li>
+                    <li>Explained Faraid concepts through structured discussions and presentations.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Exco Kerohanian | Kelab Pentadbiran Muamalat</h3>
+                <div class="sub-title">2025</div>
+                <ul>
+                    <li>Assisted in planning and implementing spiritual and student development programmes.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Secretary of Exco Kerohanian dan Sahsiah | Kelab PERKIM UUM</h3>
+                <div class="sub-title">2024</div>
+                <ul>
+                    <li>Prepared official meeting minutes, event proposals, and post-event reporting.</li>
+                    <li>Managed administrative records and handled official correspondence between the club executive committee and university management.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CERTIFICATION SECTION -->
+        <div class="card" id="certification">
+            <h2>Professional Certification</h2>
+            <div class="timeline-item">
+                <h3>Professional Halal Executive Certificate</h3>
+                <div class="sub-title">Institute of Halal Management, UUM (Accredited by Halal Professional Board, JAKIM)</div>
+                <ul>
+                    <li>Focused on Halal Manual and Records Administration, Internal Halal Committee Program, Halal Quality Assurance, Halal Certification Process Administration, and Halal Internal Audit Facilitation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SKILLS & LANGUAGES SECTION -->
         <div class="card" id="skills">
-            <h2>Skills</h2>
+            <h2>Skills & Languages</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Hard & Technical Skills</h3>
+                    <ul>
+                        <li>Microsoft Office (Word, Excel, & PowerPoint)</li>
+                        <li>Microsoft Power BI (Basic Data Visualization)</li>
+                        <li>Report Writing & Administrative Documentation</li>
+                        <li>Canva Design & Presentation Materials</li>
+                        <li>Google Sites Website Development</li>
+                    </ul>
+                    <br>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Teamwork & Leadership</li>
+                        <li>Problem-Solving & Adaptability</li>
+                        <li>Multitasking & Time Management</li>
+                        <li>Public Speaking & Presentation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><strong>Malay:</strong> Fluent</li>
+                        <li><strong>English:</strong> Fluent</li>
+                        <li><strong>Arabic:</strong> Basic</li>
+                        <li><strong>Mandarin:</strong> Basic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRA ACTIVITIES -->
+        <div class="card" id="activities">
+            <h2>Extra-Curricular Involvement</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python, C++</li>
-                <li><strong>Tools & Frameworks:</strong> Git, GitHub, VS Code, MySQL</li>
-                <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Communication</li>
+                <li><strong>Executive Committee</strong> - Muamalat Synergy: MUADS x ATLAS <em>(3 May 2025)</em></li>
+                <li><strong>Program Director & Emcee</strong> - Ceramah Rahmat Ramadan: Rahsia di Sebalik Puasa <em>(19 Mar 2025)</em></li>
+                <li><strong>Executive Committee</strong> - Muamalat Journey: Reflections on Education and Workplace Challenges <em>(3 Jan 2025)</em></li>
+                <li><strong>Program Director</strong> - Program Let's Henshin: MUADS x Sekolah Rendah Islam 3 Felda Chuping, Kangar <em>(20 Dec 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Jalinan Legasi Bersama Warga Emas <em>(17 Dec 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Program Motivasi dan Literasi Kewangan Bersama Thammasat Vittaya School, Satun, Thailand <em>(17 Nov 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Festival Halal UUM 2024 <em>(27 Jun 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Program Mobiliti Outbound Bersama Thaksin University Songkhla, Thailand <em>(26 Jun 2024)</em></li>
+                <li><strong>Deputy Program Director</strong> - Qiamullail Bersama Kelab PERKIM UUM <em>(6 Jun 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Harmoni Kreatif: Terapi Seni Untuk Kesejahteraan <em>(29 May 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Kesinambungan Kasih, Seiring Harapan: Lawatan ke Pusat Kesejahteraan Komuniti Perlis <em>(30 May 2024)</em></li>
+                <li><strong>Program Secretary</strong> - Asas Pertolongan Cemas: Komuniti Sejahtera BPSM <em>(30 May 2024)</em></li>
+                <li><strong>Program Director</strong> - KUFI 2.0 Kelab PERKIM UUM <em>(17 May 2024)</em></li>
+                <li><strong>Program Treasurer</strong> - Majlis Penutupan Memaknai Hijrah Ramadan <em>(6 Apr 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Corporate Management Workshop <em>(26 Jan 2024)</em></li>
+                <li><strong>Executive Committee</strong> - Islamic Learning: The Great Ummah Builds Leadership Characteristics Among Children <em>(30 Dec 2023)</em></li>
+                <li><strong>Executive Committee</strong> - Diamond in UUM Sintok <em>(27 Oct 2023)</em></li>
             </ul>
         </div>
 
-        <!-- PROJECTS SECTION -->
-        <div class="card" id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Sistem Pengurusan Web:</strong> Dibangunkan menggunakan HTML, CSS, dan JavaScript untuk pengurusan data.</li>
-                <li><strong>Aplikasi Analisis Data:</strong> Projek analisis menggunakan Python dan MySQL.</li>
-            </ul>
+        <!-- REFERENCE SECTION -->
+        <div class="card" id="reference">
+            <h2>Reference</h2>
+            <div class="timeline-item">
+                <h3>Dr. Nasri bin Naiimi</h3>
+                <div class="sub-title">Lecturer, Islamic Business School</div>
+                <p>Universiti Utara Malaysia</p>
+                <p><strong>Phone:</strong> +6019-4808356</p>
+                <p><strong>Email:</strong> n.nasri@uum.edu.my</p>
+            </div>
         </div>
 
     </div>
