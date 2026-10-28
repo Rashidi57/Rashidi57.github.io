@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUHAMMAD RASHIDI BIN MAT LELA - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        
+        /* Header Biru */
+        header { background-color: #0d3b66; color: white; text-align: center; padding: 40px 20px 20px 20px; }
+        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #f4d35e; object-fit: cover; margin-bottom: 15px; }
+        header h1 { font-size: 2rem; letter-spacing: 1px; margin-bottom: 8px; }
+        header p { font-size: 0.95rem; opacity: 0.9; margin-bottom: 5px; }
+        header a { color: #f4d35e; text-decoration: none; font-weight: bold; }
+
+        /* Navigation Bar */
+        nav { background-color: #082846; text-align: center; padding: 10px; sticky; top: 0; }
+        nav a { color: white; text-decoration: none; margin: 0 12px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: #f4d35e; }
+
+        /* Container Kandungan */
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        .card h2 { color: #0d3b66; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-bottom: 15px; font-size: 1.4rem; }
+        
+        ul { margin-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <!-- Ganti gambar-anda.jpg dengan nama fail gambar anda -->
+        <img src="https://via.placeholder.com/150" alt="Gambar Profil" class="profile-img">
+        <h1>MUHAMMAD RASHIDI BIN MAT LELA</h1>
+        <p>Universiti/Kolej Anda, Alamat Ringkas</p>
+        <p>+601X-XXXXXXX | email-anda@gmail.com | <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></p>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        
+        <!-- OBJECTIVE SECTION -->
+        <div class="card" id="objective">
+            <h2>Career Objective</h2>
+            <p>Saya seorang pelajar Sains Komputer / Teknologi Maklumat yang bermotivasi tinggi dengan kemahiran dalam pengaturcaraan dan pembangunan web. Memburu tempat latihan industri (*internship*) bermula [Tarikh Mula] hingga [Tarikh Tamat] untuk mengaplikasikan kemahiran teknikal serta menyumbang kepada projek syarikat.</p>
+        </div>
+
+        <!-- EDUCATION SECTION -->
+        <div class="card" id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor in Computer Science (Hons) / Diploma</strong></p>
+            <p>Universiti / Kolej Anda (2022 - Kini)</p>
+            <p>CGPA Semasa: 3.XX / 4.00</p>
+        </div>
+
+        <!-- SKILLS SECTION -->
+        <div class="card" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python, C++</li>
+                <li><strong>Tools & Frameworks:</strong> Git, GitHub, VS Code, MySQL</li>
+                <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Communication</li>
+            </ul>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div class="card" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Sistem Pengurusan Web:</strong> Dibangunkan menggunakan HTML, CSS, dan JavaScript untuk pengurusan data.</li>
+                <li><strong>Aplikasi Analisis Data:</strong> Projek analisis menggunakan Python dan MySQL.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
